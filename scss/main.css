@@ -1,1 +1,7 @@
-.container{background:red}
+body {
+  margin: 50px 120px;
+  max-width: 1200px;
+  height: 100vh;
+  border: 1px solid red;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=main.css.map */

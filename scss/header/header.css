@@ -1,0 +1,90 @@
+.header {
+  min-width: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header__logo-text {
+  margin-left: 5px;
+  font-weight: 800;
+  color: #033733;
+}
+.header__category {
+  margin-left: 60px;
+  font-weight: 400;
+}
+.header__category-item {
+  margin: 0 10px 0 0;
+  font-size: 13px;
+  text-decoration: none;
+  color: #000000;
+}
+.header__category-item:hover {
+  color: #2db7a8;
+  transition: color 0.3s ease;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+.header__contacts-phone {
+  font-size: 12px;
+  margin: 0 5px;
+}
+.header__contacts-divider {
+  margin: 0 5px;
+  height: 18px;
+  border-left: 1px solid #a9a9a9;
+}
+.header__call {
+  font-weight: 200;
+}
+.header__call-btn {
+  width: 150px;
+  height: 30px;
+  background: none;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid #2db7a8;
+  cursor: pointer;
+}
+.header__call-btn:hover {
+  background: #2db7a8;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.header__login {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.header__login-btn {
+  width: 80px;
+  height: 30px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #2db7a8;
+  border-radius: 80px;
+  cursor: pointer;
+}
+.header__login-btn:hover {
+  background: #189789;
+  transition: 0.3s ease;
+}
+.header__login__language-btn {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}/*# sourceMappingURL=header.css.map */
