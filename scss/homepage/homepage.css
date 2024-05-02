@@ -1,0 +1,107 @@
+.landing {
+  width: 100%;
+  display: flex;
+}
+.landing__info-wrapper {
+  margin-top: 150px;
+  width: 590px;
+  height: 282px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.landing__title {
+  width: 590px;
+  font-weight: 700;
+  font-size: 44px;
+  color: #033733;
+  margin: 0;
+}
+.landing__subtitle {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.landing__courses-btn {
+  width: 331px;
+  height: 81px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 48px;
+  border: none;
+  outline: none;
+  background: #2db7a8;
+  color: #fff;
+  cursor: pointer;
+}
+.landing__courses-btn:hover {
+  background: #033733;
+  transition: 0.3s ease;
+}
+.landing__img-wrapper {
+  position: relative;
+}
+.landing__img-vector {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.landing__img {
+  width: 608px;
+  height: 479px;
+  z-index: 2;
+}
+
+.section-title {
+  color: #033733;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin: 50px 0;
+}
+
+.about-school__text-container p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+.about-school__text-container strong {
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.our-teacher__card-info-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-teacher__card-info-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #033733;
+}
+.our-teacher__card-info-desc {
+  color: #5a5a5a;
+  font-size: 15px;
+  line-height: 21px;
+  width: 254px;
+  height: 100%;
+}
+.our-teacher__card-info-img {
+  width: 380px;
+  height: 422px;
+}
+
+.contacts {
+  background: #033733;
+  width: 100%;
+  height: 336px;
+  border-radius: 20px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.contacts__title {
+  color: #fff;
+  font-size: 32px;
+}/*# sourceMappingURL=homepage.css.map */
