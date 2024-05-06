@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./scss/main.css" />
     <link rel="stylesheet" href="./scss/header/header.css" />
     <link rel="stylesheet" href="./scss/homepage/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -102,11 +106,106 @@
         </section>
         <section class="courses">
           <h2 class="courses__title section-title">Курсы</h2>
+
+          <!-- Card -->
+
+          <div class="courses__list">
+            <div class="courses__card">
+              <div class="courses__img-wrap">
+                <img
+                  class="courses__img"
+                  src="/assets/valle.png"
+                  alt="courses__card"
+                />
+              </div>
+              <div class="courses__text">
+                <h3>Lego education Wedo 2.0</h3>
+                <p>
+                  Для младших студентов 5-8 лет программа построена на Lego
+                  education Wedo 2.0
+                </p>
+              </div>
+              <div class="courses__btn">
+                <button class="courses__btn-green">Записаться</button>
+                <button class="courses__btn-white">Информация</button>
+              </div>
+            </div>
+
+            <div class="courses__card">
+              <div class="courses__img-wrap">
+                <img
+                  class="courses__img"
+                  src="/assets/valle.png"
+                  alt="courses__card"
+                />
+              </div>
+              <div class="courses__text">
+                <h3>Lego education Wedo 2.0</h3>
+                <p>
+                  Для младших студентов 5-8 лет программа построена на Lego
+                  education Wedo 2.0
+                </p>
+              </div>
+              <div class="courses__btn">
+                <button class="courses__btn-green">Записаться</button>
+                <button class="courses__btn-white">Информация</button>
+              </div>
+            </div>
+
+            <div class="courses__card">
+              <div class="courses__img-wrap">
+                <img
+                  class="courses__img"
+                  src="/assets/valle.png"
+                  alt="courses__card"
+                />
+              </div>
+              <div class="courses__text">
+                <h3>Lego education Wedo 2.0</h3>
+                <p>
+                  Для младших студентов 5-8 лет программа построена на Lego
+                  education Wedo 2.0
+                </p>
+              </div>
+              <div class="courses__btn">
+                <button class="courses__btn-green">Записаться</button>
+                <button class="courses__btn-white">Информация</button>
+              </div>
+            </div>
+          </div>
+
           <div class="courses__swiper-container"></div>
         </section>
+
         <section class="promotion">
           <h2 class="promotion__title section-title">Акции</h2>
+          <div class="promotion__wrapper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/assets/robo1.jpg" alt="robo1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/robo2.jpg" alt="robo2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/robo3.jpg" alt="robo3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/robo1.jpg" alt="robo1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/robo2.jpg" alt="robo2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/robo3.jpg" alt="robo3" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </section>
+
         <section class="about-school">
           <h2 class="about-school__title section-title">О школе</h2>
           <img
@@ -182,9 +281,72 @@
           </div>
         </section>
         <section class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
+          <h2 class="contacts__info-title">Контакты</h2>
+          <div class="contacts__info">
+            <div class="contacts__info-wrapper">
+              <div class="contacts__info-phone">
+                <svg
+                  class="contacts__info-phone-img"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1099 11.6177L13.0614 9.80351L13.0502 9.79835C12.8401 9.70846 12.6108 9.67238 12.3832 9.69339C12.1555 9.7144 11.9367 9.79183 11.7466 9.91867C11.7242 9.93346 11.7027 9.94952 11.6821 9.96679L9.59039 11.75C8.26523 11.1063 6.89711 9.74851 6.25344 8.44054L8.03922 6.31703C8.05641 6.29554 8.07273 6.27406 8.0882 6.25085C8.21232 6.06119 8.28763 5.84379 8.30742 5.61799C8.32721 5.39219 8.29087 5.165 8.20164 4.95663V4.94632L6.38234 0.890931C6.26439 0.618737 6.06156 0.391991 5.80414 0.244543C5.54673 0.097094 5.24853 0.036851 4.95406 0.0728064C3.78958 0.226039 2.7207 0.79792 1.94705 1.68164C1.1734 2.56536 0.747895 3.70048 0.75 4.87499C0.75 11.6984 6.30156 17.25 13.125 17.25C14.2995 17.2521 15.4346 16.8266 16.3184 16.0529C17.2021 15.2793 17.774 14.2104 17.9272 13.0459C17.9632 12.7516 17.9031 12.4534 17.7558 12.196C17.6085 11.9386 17.382 11.7357 17.1099 11.6177ZM13.125 15.875C10.2086 15.8718 7.41255 14.7119 5.35034 12.6497C3.28813 10.5874 2.12818 7.7914 2.125 4.87499C2.12177 4.0358 2.42411 3.22413 2.97555 2.59155C3.527 1.95898 4.28985 1.54875 5.12164 1.43749C5.1213 1.44092 5.1213 1.44438 5.12164 1.44781L6.92633 5.48687L5.15 7.61296C5.13197 7.63371 5.11559 7.65583 5.10102 7.67913C4.97169 7.87758 4.89583 8.10607 4.88077 8.34245C4.86571 8.57884 4.91198 8.8151 5.01508 9.02835C5.79367 10.6208 7.39813 12.2132 9.00773 12.9909C9.22255 13.0931 9.46018 13.1377 9.69742 13.1206C9.93466 13.1034 10.1634 13.025 10.3612 12.893C10.3833 12.8781 10.4045 12.862 10.4248 12.8448L12.514 11.0625L16.553 12.8715H16.5625C16.4526 13.7044 16.043 14.4688 15.4103 15.0216C14.7776 15.5745 13.9652 15.8778 13.125 15.875Z"
+                    fill="#2DB7A8"
+                  />
+                </svg>
+                <div class="contacts__info-phone-numbers">
+                  <span>043337325</span>
+                  <span>043337325</span>
+                </div>
+              </div>
+              <div class="contacts__info-mail">
+                <svg
+                  class="contacts__info-phone-img"
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5 13H1.5C0.67 13 0 12.33 0 11.5V2.5C0 1.67 0.67 1 1.5 1H14.5C15.33 1 16 1.67 16 2.5V11.5C16 12.33 15.33 13 14.5 13ZM1.5 2C1.22 2 1 2.22 1 2.5V11.5C1 11.78 1.22 12 1.5 12H14.5C14.78 12 15 11.78 15 11.5V2.5C15 2.22 14.78 2 14.5 2H1.5Z"
+                    fill="#2DB7A8"
+                  />
+                  <path
+                    d="M8.00001 8.95963C7.30001 8.95963 6.66001 8.67963 6.18001 8.16963L0.930015 2.58963C0.740015 2.38963 0.750015 2.06963 0.950015 1.87963C1.15001 1.68963 1.47001 1.69963 1.66001 1.89963L6.91001 7.47963C7.48001 8.08963 8.52002 8.08963 9.09002 7.47963L14.34 1.90963C14.53 1.70963 14.85 1.69963 15.05 1.88963C15.25 2.07963 15.26 2.39963 15.07 2.59963L9.82001 8.17963C9.34002 8.68963 8.70001 8.96963 8.00001 8.96963V8.95963Z"
+                    fill="#2DB7A8"
+                  />
+                </svg>
+                <span>info@robix.am</span>
+              </div>
+            </div>
+            <div class="contacts__divider"></div>
+            <form class="contacts__subscribe-container">
+              <div>
+                <h2 class="contacts__subscribe-title">
+                  Подпишись на наши обновления
+                </h2>
+                <div class="contacts__subscribe-input">
+                  <input
+                    type="email"
+                    class="contacts__subscribe-email"
+                    id="contacts__subscribe-email"
+                    placeholder="e-mail"
+                  />
+                  <button class="contacts__subscribe-btn">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </section>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
