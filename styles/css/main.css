@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.header {
+  max-width: 1200px;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__logo-text {
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 800;
+  color: #033733;
+}
+.header__category {
+  margin-left: 60px;
+  font-weight: 400;
+}
+.header__category-item {
+  width: 83px;
+  margin: 0 20px 0 0;
+  font-size: 17px;
+  text-decoration: none;
+  color: #000000;
+}
+.header__category-item:hover {
+  color: #2db7a8;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+}
+.header__contacts-phone {
+  font-size: 17px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000000;
+}
+.header__contacts-phone:hover {
+  color: #2db7a8;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.header__contacts-divider {
+  margin: 0 5px;
+  height: 18.5px;
+  border-left: 1px solid #a9a9a9;
+}
+.header__call {
+  font-weight: 200;
+}
+.header__call-btn {
+  width: 194px;
+  height: 39px;
+  background: none;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid #2db7a8;
+  font-size: 17px;
+  cursor: pointer;
+}
+.header__call-btn:hover {
+  background: #2db7a8;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header__login {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__login-btn {
+  font-size: 17px;
+  font-weight: 400;
+  width: 105px;
+  height: 39px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #2db7a8;
+  border-radius: 80px;
+  cursor: pointer;
+}
+.header__login-btn:hover {
+  background: #189789;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header__login__language-btn {
+  margin-left: 20px;
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.landing {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.landing__info-wrapper {
+  margin-top: 150px;
+  width: 590px;
+  height: 282px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.landing__title {
+  width: 590px;
+  font-weight: 700;
+  font-size: 44px;
+  color: #033733;
+  margin: 0;
+}
+.landing__subtitle {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.landing__courses-btn {
+  width: 331px;
+  height: 81px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 48px;
+  border: none;
+  outline: none;
+  background: #2db7a8;
+  color: #fff;
+  cursor: pointer;
+}
+.landing__courses-btn:active {
+  background: #033733;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.landing__img-wrapper {
+  position: relative;
+}
+.landing__img-vector {
+  z-index: 1;
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+.landing__img {
+  width: 666px;
+  height: 666px;
+  position: absolute;
+  z-index: 2;
+}
+
+.section-title {
+  color: #033733;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 50px 0;
+}
+
+.courses__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.courses__card {
+  width: 380px;
+  border: 2px solid #d9d9d9;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+.courses__img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.courses__text {
+  padding: 0 10px 10px 10px;
+}
+.courses__text h3 {
+  font-size: 24px;
+  color: #033733;
+}
+.courses__text p {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+.courses__btn {
+  padding: 0 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+.courses__btn-green {
+  width: 231px;
+  height: 43px;
+  font-weight: 700;
+  background: #2db7a8;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.courses__btn-green:hover {
+  background: #189789;
+  color: #fff;
+}
+.courses__btn-white {
+  width: 231px;
+  height: 43px;
+  font-weight: 700;
+  background: #ffffff;
+  border: 1px solid #2db7a8;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.courses__btn-white:hover {
+  background: #2db7a8;
+  color: #fff;
+}
+
+.promotion {
+  height: 450px;
+}
+.promotion__wrapper {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  max-width: 720px;
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-school__text-container p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+.about-school__text-container strong {
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.our-teacher__card-info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.our-teacher__card-info-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #033733;
+}
+.our-teacher__card-info-desc {
+  color: #5a5a5a;
+  font-size: 15px;
+  line-height: 21px;
+  width: 254px;
+  height: 100%;
+}
+.our-teacher__card-info-img {
+  width: 380px;
+  height: 422px;
+}
+
+.contacts {
+  margin-top: 50px;
+  background: #033733;
+  width: 100%;
+  height: 336px;
+  border-radius: 20px;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.contacts span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contacts__info-title {
+  color: #fff;
+  font-size: 32px;
+  margin: 0 0 30px;
+}
+.contacts__info-phone, .contacts__info-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.contacts__info-mail {
+  margin-top: 30px;
+}
+.contacts__info-phone-img {
+  margin-right: 20px;
+  width: 22px;
+  height: 22px;
+}
+.contacts__info-phone-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contacts__divider {
+  margin: 0 5px;
+  height: 163px;
+  border-left: 1px solid #a9a9a9;
+  margin: 0 20px;
+}
+.contacts__subscribe-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__subscribe-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.contacts__subscribe-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts__subscribe-email {
+  margin: 0;
+  padding: 0;
+  width: 364px;
+  height: 64px;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
+  padding: 15px;
+  color: #b3b3b3;
+}
+.contacts__subscribe-btn {
+  margin: 0;
+  margin-left: -5px;
+  padding: 0;
+  width: 177px;
+  height: 64px;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 17px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #2db7a8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  margin: 50px 120px;
+  max-width: 1200px;
+  width: 100%;
+}
