@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+a {
+  text-decoration: none;
+  color: black;
+}
 .header {
   max-width: 1200px;
   width: 100%;
@@ -222,6 +226,8 @@
   border: 2px solid #d9d9d9;
   border-radius: 20px;
   border: 1px solid #ccc;
+
+  margin-bottom: 26px;
 }
 .courses__img {
   border-radius: 20px 20px 0 0;
