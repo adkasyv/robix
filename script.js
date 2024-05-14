@@ -2,6 +2,7 @@ let svg = (document.createElementNS = "");
 
 document.getElementById("toggleList").addEventListener("click", function () {
   let category = document.getElementById("category");
+  let categoryItem = document.getElementById("categoryItems");
 
   if (category.style.display === "none") {
     category.classList.remove("active-list");

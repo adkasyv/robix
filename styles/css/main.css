@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-a {
-  text-decoration: none;
-  color: black;
-}
 .header {
   max-width: 1200px;
   width: 100%;
@@ -240,6 +236,12 @@ a {
 }
 .landing__img-wrapper {
   position: relative;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .landing__img-vector {
   z-index: 1;
@@ -324,8 +326,6 @@ a {
   border: 2px solid #d9d9d9;
   border-radius: 20px;
   border: 1px solid #ccc;
-
-  margin-bottom: 26px;
 }
 .courses__img {
   border-radius: 20px 20px 0 0;
@@ -416,7 +416,6 @@ a {
 
 .swiper-slide {
   position: absolute;
-  text-align: center;
   font-size: 18px;
   background: #fff;
   display: -webkit-box;
@@ -428,18 +427,21 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
 }
 
 .swiper-slide img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
-  width: 720px;
-  height: 350px;
-  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+  width: 720px;
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .about-school__img {
@@ -664,4 +666,9 @@ body {
   margin: 50px 120px;
   max-width: 1200px;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
