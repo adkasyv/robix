@@ -1,3 +1,15 @@
+let svg = (document.createElementNS = "");
+
+document.getElementById("toggleList").addEventListener("click", function () {
+  let category = document.getElementById("category");
+
+  if (category.style.display === "none") {
+    category.classList.remove("active-list");
+  } else {
+    category.classList.toggle("active-list");
+  }
+});
+
 let promotionSwiper = new Swiper(".promotion-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -20,16 +32,4 @@ let swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
-
-let svg = (document.createElementNS = "");
-
-document.getElementById("toggleList").addEventListener("click", function () {
-  let category = document.getElementById("category");
-  category.classList.toggle("show-list");
-  if (category.style.display === "none") {
-    this.textContent = "";
-  } else {
-    category.style.display = "block";
-  }
 });

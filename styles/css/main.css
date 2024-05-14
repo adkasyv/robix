@@ -9,11 +9,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media all and (max-width: 1024px) {
   .header {
     padding: 0 70px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 .header__logo {
@@ -66,6 +75,14 @@
     margin-left: 10px;
   }
 }
+@media all and (max-width: 728px) {
+  .header #toggleList {
+    display: block;
+  }
+  .header__category {
+    display: none;
+  }
+}
 .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,6 +91,11 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 20px;
+}
+@media all and (max-width: 768px) {
+  .header__contacts {
+    display: none;
+  }
 }
 .header__contacts-phone {
   font-size: 17px;
@@ -501,24 +523,14 @@
   display: flex;
 }
 .contacts__info-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 100%;
+  padding: 0;
 }
 .contacts__info-title {
   color: #fff;
   font-size: 32px;
   margin: 0 0 30px;
+  height: 100%;
 }
 .contacts__info-phone, .contacts__info-mail {
   display: -webkit-box;
@@ -605,14 +617,27 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-@media all and (max-width: 768px) {
-  .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.login__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.login__logo-text {
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 800;
+  color: #033733;
 }
 
 body {
