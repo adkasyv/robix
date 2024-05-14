@@ -17,6 +17,18 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media all and (max-width: 1024px) {
+  .header {
+    padding: 0 70px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +61,32 @@ a {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+.header #toggleList {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .header #toggleList {
+    display: block;
+  }
+  .header__category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+  }
+}
+@media all and (max-width: 728px) {
+  .header #toggleList {
+    display: block;
+  }
+  .header__category {
+    display: none;
+  }
+}
 .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,6 +95,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 20px;
+}
+@media all and (max-width: 768px) {
+  .header__contacts {
+    display: none;
+  }
 }
 .header__contacts-phone {
   font-size: 17px;
@@ -135,6 +178,12 @@ a {
   outline: none;
 }
 
+@media all and (max-width: 1024px) {
+  .homepage {
+    padding: 0 70px;
+  }
+}
+
 .landing {
   width: 100%;
   display: -webkit-box;
@@ -181,6 +230,9 @@ a {
   color: #fff;
   cursor: pointer;
 }
+.landing__courses-btn:hover {
+  background: #189789;
+}
 .landing__courses-btn:active {
   background: #033733;
   -webkit-transition: 0.3s ease;
@@ -211,15 +263,61 @@ a {
   margin: 50px 0;
 }
 
+.courses {
+  position: relative;
+}
+.courses__arrow-btn-block {
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  width: 100%;
+}
+.courses__arrow-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90px;
+  height: 90px;
+  background: #2db7a8;
+  border-radius: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.courses__arrow-btn:hover {
+  background: #033733;
+}
+.courses__arrow-right {
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
 .courses__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 20px;
 }
 .courses__card {
   width: 380px;
@@ -293,7 +391,14 @@ a {
   background: #2db7a8;
   color: #fff;
 }
-
+@media all and (max-width: 1024px) {
+  .courses__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .promotion {
   height: 450px;
 }
@@ -323,20 +428,25 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
 
 .swiper-slide img {
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
-  max-width: 720px;
-  width: 100%;
+  width: 720px;
   height: 350px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.about-school__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 .about-school__text-container p {
   font-size: 20px;
   font-weight: 400;
@@ -355,8 +465,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
 }
 .our-teacher__card-info-name {
   font-size: 24px;
@@ -367,21 +477,44 @@ a {
   color: #5a5a5a;
   font-size: 15px;
   line-height: 21px;
-  width: 254px;
+  width: 100%;
   height: 100%;
 }
 .our-teacher__card-info-img {
-  width: 380px;
-  height: 422px;
+  max-width: 380px;
+  max-height: 422px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media all and (max-width: 1024px) {
+  .our-teacher__card-info-list {
+    gap: 20px;
+  }
+}
+@media all and (max-width: 768px) {
+  .our-teacher__card-info-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .contacts {
   margin-top: 50px;
   background: #033733;
   width: 100%;
-  height: 336px;
   border-radius: 20px;
   padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -396,24 +529,14 @@ a {
   display: flex;
 }
 .contacts__info-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 100%;
+  padding: 0;
 }
 .contacts__info-title {
   color: #fff;
   font-size: 32px;
   margin: 0 0 30px;
+  height: 100%;
 }
 .contacts__info-phone, .contacts__info-mail {
   display: -webkit-box;
@@ -472,6 +595,7 @@ a {
 .contacts__subscribe-email {
   margin: 0;
   padding: 0;
+  max-width: 100%;
   width: 364px;
   height: 64px;
   border-radius: 20px 0px 0px 20px;
@@ -498,6 +622,28 @@ a {
   background: #2db7a8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.login__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.login__logo-text {
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 800;
+  color: #033733;
 }
 
 body {

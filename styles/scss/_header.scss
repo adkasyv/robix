@@ -3,6 +3,12 @@ $secondary-color: #2db7a8;
 $black-color: #000000;
 
 .header {
+  @media all and (max-width: 1024px) {
+    padding: 0 70px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
   max-width: 1200px; // temp size
   width: 100%;
   height: 40px;
@@ -39,11 +45,38 @@ $black-color: #000000;
       transition: color 0.3s ease;
     }
   }
+  #toggleList {
+    display: none;
+  }
+
+  @media all and (max-width: 1024px) {
+    #toggleList {
+      display: block;
+    }
+    &__category {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+  }
+  @media all and (max-width: 728px) {
+    #toggleList {
+      display: block;
+    }
+    &__category {
+      display: none;
+    }
+    &__category .show-list {
+    }
+  }
 
   &__contacts {
     display: flex;
     align-items: center;
     margin: 0 20px;
+    @media all and (max-width: 768px) {
+      display: none;
+    }
   }
   &__contacts-phone {
     font-size: 17px;
