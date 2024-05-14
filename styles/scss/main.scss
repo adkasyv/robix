@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./header";
+@import "./homepage";
+
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -6,10 +9,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .wrapper {
   margin: 50px 120px;
   max-width: 1200px;
   width: 100%;
-  border: 1px solid red;
-}/*# sourceMappingURL=main.css.map */
+}
+a {
+  text-decoration: none;
+  color: black;
+}
