@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robix</title>
-    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="stylesheet" href="../styles/css/main.css" />
+    <link rel="stylesheet" href="../styles/scss/_coursesPage.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div>
-          <a href="./index.html" class="header__logo">
+          <a href="../index.html" class="header__logo">
             <div href="" class="header__logo-img">
               <svg
                 width="26"
@@ -34,24 +35,10 @@
           >
         </div>
         <div class="header__category">
-          <a href="./courses/courses.html" class="header__category-item">Курсы</a>
-          <a href="./promotions/promotions.html" class="header__category-item">Акции</a>
+          <a href="../courses/courses.html" class="header__category-item">Курсы</a>
+          <a href="../promotions/promotions.html" class="header__category-item">Акции</a>
           <a href="" class="header__category-item">О школе</a>
         </div>
-        <span id="toggleList">
-          <svg
-            width="12"
-            height="7"
-            viewBox="0 0 12 7"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11.8402 0.996255L6.38589 6.82894C6.33523 6.88317 6.27508 6.92619 6.20887 6.95554C6.14265 6.98489 6.07168 7 6 7C5.92832 7 5.85735 6.98489 5.79113 6.95554C5.72492 6.92619 5.66476 6.88317 5.61411 6.82894L0.159841 0.996255C0.0574964 0.88681 0 0.738371 0 0.583592C0 0.428814 0.0574964 0.280375 0.159841 0.17093C0.262185 0.0614851 0.400994 0 0.54573 0C0.690467 0 0.829275 0.0614851 0.93162 0.17093L6 5.59168L11.0684 0.17093C11.1191 0.116738 11.1792 0.0737513 11.2454 0.0444231C11.3116 0.0150948 11.3826 0 11.4543 0C11.5259 0 11.5969 0.0150948 11.6631 0.0444231C11.7293 0.0737513 11.7895 0.116738 11.8402 0.17093C11.8908 0.225122 11.931 0.289456 11.9585 0.360261C11.9859 0.431066 12 0.506954 12 0.583592C12 0.660231 11.9859 0.736119 11.9585 0.806924C11.931 0.877728 11.8908 0.942063 11.8402 0.996255Z"
-              fill="#2DB7A8"
-            />
-          </svg>
-        </span>
         <div class="header__contacts">
           <svg
             width="17"
@@ -65,9 +52,9 @@
               fill="#2DB7A8"
             />
           </svg>
-          <a href="tel:043337325" class="header__contacts-phone">043337325</a>
+          <a href="" class="header__contacts-phone">043337325</a>
           <div class="header__contacts-divider"></div>
-          <a href="tel:043337325" class="header__contacts-phone">043337325</a>
+          <a href="" class="header__contacts-phone">043337325</a>
         </div>
         <div class="header__call">
           <button class="header__call-btn" id="call-btn">
@@ -75,9 +62,7 @@
           </button>
         </div>
         <div class="header__login">
-          <a href="/autorization/login.html">
-            <button class="header__login-btn">Войти</button>
-          </a>
+          <button class="header__login-btn">Войти</button>
           <button class="header__login__language-btn">
             <svg
               width="20"
@@ -95,246 +80,54 @@
         </div>
       </header>
       <div class="homepage">
-        <section class="landing">
-          <div class="landing__info-wrapper">
-            <h1 class="landing__title">
-              Школа робототехники для детей от 5 до 12 лет
-            </h1>
-            <span class="landing__subtitle"
-              >На всех курсах мы разбираем принципы работы автоматики,
-              используемые в робототехнике</span
-            >
-            <a href="">
-              <button class="landing__courses-btn">Каталог курсов</button>
-            </a>
-          </div>
-          <div class="landing__img-wrapper">
-            <img
-              class="landing__img-vector"
-              src="./assets/landing-img-vector.svg"
-              alt="landing-vector"
-            />
-            <img
-              class="landing__img"
-              src="./assets/landing.svg"
-              alt="landing-img"
-            />
-          </div>
-        </section>
-        <section class="courses">
-          <h2 class="courses__title section-title">Курсы</h2>
-
-          <!-- Card -->
-
-          <div class="courses__list">
-            <div class="courses__arrow-btn-block">
-              <div class="courses__arrow-btn courses__arrow-left">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M27.3331 12.3333L27.3331 15.6667L7.33311 15.6667L16.4998 24.8333L14.1331 27.2L0.933105 14L14.1331 0.800012L16.4998 3.16668L7.3331 12.3333L27.3331 12.3333Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <div class="courses__arrow-btn courses__arrow-right">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M27.3331 12.3333L27.3331 15.6667L7.33311 15.6667L16.4998 24.8333L14.1331 27.2L0.933105 14L14.1331 0.800012L16.4998 3.16668L7.3331 12.3333L27.3331 12.3333Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
+        
+        <section class="courses__page">
+            <div class="courses__page--photoWrap">
+              <img class="courses__page--photo" src="../assets/promotion2.png" alt="courses__page--img">
             </div>
-
-            <div class="courses__card">
-              <div class="courses__img-wrap">
-                <img
-                  class="courses__img"
-                  src="./assets/valle.png"
-                  alt="courses__card"
-                />
-              </div>
-              <div class="courses__text">
-                <h3>Lego education Wedo 2.0</h3>
-                <p>
-                  Для младших студентов 5-8 лет программа построена на Lego
-                  education Wedo 2.0
-                </p>
-              </div>
-              <div class="courses__btn">
-                <button class="courses__btn-green">Записаться</button>
-                <button class="courses__btn-white">Информация</button>
-              </div>
+            <div class="courses__page--title">
+              <h1>Lego education <br>  Wedo 2.0</h1>
             </div>
-            <div class="courses__card">
-              <div class="courses__img-wrap">
-                <img
-                  class="courses__img"
-                  src="./assets/valle.png"
-                  alt="courses__card"
-                />
-              </div>
-              <div class="courses__text">
-                <h3>Lego education Wedo 2.0</h3>
-                <p>
-                  Для младших студентов 5-8 лет программа построена на Lego
-                  education Wedo 2.0
-                </p>
-              </div>
-              <div class="courses__btn">
-                <button class="courses__btn-green">Записаться</button>
-                <button class="courses__btn-white">Информация</button>
-              </div>
-            </div>
-            <div class="courses__card">
-              <div class="courses__img-wrap">
-                <img
-                  class="courses__img"
-                  src="./assets/valle.png"
-                  alt="courses__card"
-                />
-              </div>
-              <div class="courses__text">
-                <h3>Lego education Wedo 2.0</h3>
-                <p>
-                  Для младших студентов 5-8 лет программа построена на Lego
-                  education Wedo 2.0
-                </p>
-              </div>
-              <div class="courses__btn">
-                <button class="courses__btn-green">Записаться</button>
-                <button class="courses__btn-white">Информация</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="courses__swiper-container"></div>
-        </section>
-
-        <section class="promotion">
-          <h2 class="promotion__title section-title">Акции</h2>
-          <div class="promotion__wrapper">
-            <div class="swiper promotion-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/robo1.jpg" alt="robo1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo2.jpg" alt="robo2" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo3.jpg" alt="robo3" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo1.jpg" alt="robo1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo2.jpg" alt="robo2" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo3.jpg" alt="robo3" />
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="about-school">
-          <h2 class="about-school__title section-title">О школе</h2>
-          <img
-            class="about-school__img"
-            src="./assets/about-school.png"
-            alt="about-school"
-          />
-          <div class="about-school__text-container">
-            <p><strong>Привет, друзья!</strong></p>
-            <p>
-              Сегодня расскажем о наших программах обучения. Они рассчитаны на 3
-              возрастные группы.
-            </p>
-            <p>
-              Для младших студентов 5-8 лет программа построена на Lego
-              education Wedo 2.0, где ребенок научится собирать робот Lego и
-              самостоятельно его программировать.
-            </p>
-            <p>
-              Для студентов 8-10 лет - курс, основанный на среде
-              программирования MakeBlock и роботе серии Mbot. Здесь дети
-              работают с более сложным оборудованием и собирают робота с помощью
-              отвертки, болтов и гаек.
-            </p>
-            <p>
-              А старшие студенты (10-12 лет) на базе контроллера Arduino учатся
-              создавать свои проекты и роботов с самостоятельной разработкой
-              движущихся частей, проектировать и собирать элементы «умного
-              дома», которые они с легкостью смогут внедрить в собственной
-              комнате.
-            </p>
-          </div>
-        </section>
-        <section class="our-teacher">
-          <h2 class="our-teacher__title section-title">Наши преподаватели</h2>
-          <div class="our-teacher__card-info-list">
-            <div class="our-teacher__card-info-item">
-
+            <div class="courses__page--popup">
               <div>
-                <img
-                  class="our-teacher__card-info-img"
-                  src="/assets/Марина.png"
-                  alt="marina-card"
-                />
+                <h2>Lego education Wedo 2.0</h2>
               </div>
-
-              <h3 class="our-teacher__card-info-name">Марина Литвинова</h3>
-              <ul class="our-teacher__card-info-desc">
-                <li>Более 8 лет опыт работы учителем</li>
-                <li>Магистр робототехники 80 уровня</li>
-              </ul>
-            </div>
-            <div class="our-teacher__card-info-item">
               <div>
-                <img
-                  class="our-teacher__card-info-img"
-                  src="/assets/Вася.png"
-                  alt="vasya-card"
-                />
+                <p>Для младших студентов 5-8 лет программа построена на Lego education Wedo 2.0</p>
               </div>
-              <h3 class="our-teacher__card-info-name">Вася Васильев</h3>
-              <ul class="our-teacher__card-info-desc">
-                <li>Более 8 лет опыт работы учителем</li>
-                <li>Магистр робототехники 80 уровня</li>
-              </ul>
-            </div>
-            <div class="our-teacher__card-info-item">
               <div>
-                <img
-                  class="our-teacher__card-info-img"
-                  src="/assets/Дмитрий.png"
-                  alt="dima-card"
-                />
+                <ul>
+                  <li>от 5 - до 8 лет</li>
+                  <li>Длительность: 14 дней</li>
+                  <li>Поддержка преподавателя</li>
+                  <li>12 домашних заданий</li>
+                  <li>Дипломная работа</li>
+                  <li>Сертификат о прохождении курса</li>
+                </ul>
               </div>
-
-              <h3 class="our-teacher__card-info-name">Дмитрий Тарасов</h3>
-              <ul class="our-teacher__card-info-desc">
-                <li>Более 8 лет опыт работы учителем</li>
-                <li>Магистр робототехники 80 уровня</li>
-              </ul>
+              <div class="courses__page--btnWrap">
+                <button class="courses__btn-green">Записаться</button>
+              </div>
             </div>
+        </section>
+
+        <section class="courses__page--about">
+          <div>
+            <h3>Привет, друзья!</h3>
+          </div>
+          <div>
+            <p>
+              Сегодня расскажем о наших программах обучения. Они рассчитаны на 3 возрастные группы.
+              <br><br>
+              Для младших студентов 5-8 лет программа построена на Lego education Wedo 2.0, где ребенок научится собирать робот Lego и самостоятельно его программировать. 
+              <br><br>
+              Для студентов 8-10 лет - курс, основанный на среде программирования MakeBlock и роботе серии Mbot. Здесь дети работают с более сложным оборудованием и собирают робота с помощью отвертки, болтов и гаек.
+              <br><br>
+              А старшие студенты (10-12 лет) на базе контроллера Arduino учатся создавать свои проекты и роботов с самостоятельной разработкой движущихся частей, проектировать и собирать элементы «умного дома», которые они с легкостью смогут внедрить в собственной комнате.</p>
           </div>
         </section>
+
+
         <section class="contacts">
           <h2 class="contacts__info-title">Контакты</h2>
           <div class="contacts__info">
