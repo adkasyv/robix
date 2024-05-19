@@ -121,6 +121,9 @@ $black-color: #000000;
     align-items: center;
   }
   &__login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 17px;
     font-weight: 400;
     width: 105px;
