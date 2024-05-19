@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <title>Robix login</title>
     <link rel="stylesheet" href="../styles/css/main.css" />
-    <link rel="stylesheet" href="../styles/css/login.css" />
+    <link rel="stylesheet" href="../styles/scss/_login.css" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.svg" />
   </head>
   <body>
     <section class="login">
       <div class="login__wrapper">
-        <div>
-          <a href="/index.html" class="login__logo">
+        <div class="login__logo--wrap">
+          <a href="../index.html" class="login__logo">
             <div href="" class="login__logo-img">
               <svg
                 width="26"
@@ -28,6 +28,24 @@
             </div>
             <span class="login__logo-text">ROBIX</span></a
           >
+        </div>
+        
+        
+        <div class="login__form">
+          <div class="login__switch">
+            <a href="./login.html" class="login__switch--btn">Войти</a>
+            <a href="./registration.html" class="login__switch--btn">Регистрация</a>
+          </div>
+          <div class="login__input--wrap">
+            <input class="login__input" type="email" placeholder="E-mail или телефон">
+            <input class="login__input" type="password" placeholder="Пароль">
+          </div>
+          <div class="login__help--wrap">
+            <button class="login__help--btn">Забыли пароль?</button>
+          </div>
+          <div class="login__btn--wrap">
+            <button class="login__btn">Войти</button>
+          </div>  
         </div>
       </div>
     </section>
