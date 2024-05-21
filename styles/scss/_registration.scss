@@ -1,0 +1,77 @@
+.login {
+    display: flex;
+    &__logo--wrap{
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    &__logo-text {
+      font-size: 20px;
+      margin-left: 5px;
+      font-weight: 800;
+    }
+  
+    &__form{
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 5em;
+    }
+    &__switch{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__switch--btn{
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 24px;
+    }
+    &__input--wrap{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__input{
+      height: 30px;
+      width: 300px;
+      padding: 7px;
+      border-radius: 5px;
+      border: 1px solid #BCBCBC;
+    }
+    &__help--btn{
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: #2DB7A8;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 0;
+    }
+    &__btn{
+      width: 316px;
+      height: 42px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background: #2db7a8;
+      color: #fff;
+      cursor: pointer;
+    }
+    &__btn:hover {
+      background: #189789;
+    }
+    &__btn:active {
+      background: #033733;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+    }
+  }
+  

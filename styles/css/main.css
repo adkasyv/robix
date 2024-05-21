@@ -54,6 +54,7 @@
 .header__burger-menu {
   display: none;
   margin: 0 20px;
+  cursor: pointer;
 }
 .header__burger-menu__burger-menu span, .header__burger-menu::before, .header__burger-menu::after {
   left: 0;
@@ -91,7 +92,6 @@
     position: relative;
     width: 30px;
     height: 18px;
-    cursor: pointer;
   }
 }
 .header__menu-container {
@@ -122,6 +122,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 10px;
+  }
+}
+@media all and (max-width: 768px) {
+  .header__category {
+    display: none;
   }
 }
 .header__category-item {
@@ -223,6 +228,15 @@
   }
 }
 .header__login-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 17px;
   font-weight: 400;
   width: 105px;
@@ -457,7 +471,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
 }
 .courses__arrow-btn {
   position: absolute;
@@ -479,12 +492,21 @@
   transition: 0.3s ease;
   cursor: pointer;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 480px) {
   .courses__arrow-btn {
+    position: static;
     min-width: 67px;
     width: 67px;
     height: 67px;
-    top: 600px;
+  }
+}
+@media all and (max-width: 320px) {
+  .courses__arrow-btn {
+    position: static;
+    min-width: 67px;
+    width: 67px;
+    height: 67px;
+    top: 1220px;
   }
 }
 .courses__arrow-btn:hover {
@@ -1010,6 +1032,14 @@
   display: -ms-flexbox;
   display: flex;
 }
+.login__logo--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .login__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1024,7 +1054,77 @@
   font-size: 20px;
   margin-left: 5px;
   font-weight: 800;
-  color: #033733;
+}
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 14px;
+  margin: 5em;
+}
+.login__switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.login__switch--btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 24px;
+}
+.login__input--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.login__input {
+  height: 30px;
+  width: 300px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #BCBCBC;
+}
+.login__help--btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #2DB7A8;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0;
+}
+.login__btn {
+  width: 316px;
+  height: 42px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #2db7a8;
+  color: #fff;
+  cursor: pointer;
+}
+.login__btn:hover {
+  background: #189789;
+}
+.login__btn:active {
+  background: #033733;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 body {

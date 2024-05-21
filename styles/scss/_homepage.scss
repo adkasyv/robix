@@ -154,7 +154,6 @@
 .courses {
   display: flex;
   flex-direction: column;
-  position: relative;
 
   &__arrow-btn {
     position: absolute;
@@ -169,11 +168,19 @@
     transition: 0.3s ease;
     cursor: pointer;
 
-    @media all and (max-width: 320px) {
+    @media all and (max-width: 480px) {
+      position: static;
       min-width: 67px;
       width: 67px;
       height: 67px;
-      top: 600px;
+    }
+
+    @media all and (max-width: 320px) {
+      position: static;
+      min-width: 67px;
+      width: 67px;
+      height: 67px;
+      top: 1220px;
     }
 
     &:hover {
@@ -191,6 +198,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
     @media all and (max-width: 1024px) {
       width: 100%;
       display: flex;
@@ -201,8 +209,11 @@
     border: 2px solid #d9d9d9;
     border-radius: 20px;
     border: 1px solid #ccc;
+
     @media all and (max-width: 768px) {
       width: 100%;
+    }
+    @media all and (max-width: 320px) {
     }
   }
   @media all and (max-width: 1024px) {
