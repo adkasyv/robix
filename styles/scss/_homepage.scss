@@ -333,10 +333,9 @@
   cursor: pointer;
 
   @media all and (max-width: 768px) {
-    height: 280px;
+    height: 320px;
   }
   @media all and (max-width: 480px) {
-    height: 260px;
   }
 }
 .swiper-wrapper {
@@ -354,12 +353,12 @@
   @media all and (max-width: 1024px) {
   }
   @media all and (max-width: 768px) {
-    margin-right: 360px !important;
+    margin-right: 520px !important;
     width: 577px;
     height: 280px;
   }
-  @media all and (max-width: 768px) {
-    margin-right: 360px !important;
+  @media all and (max-width: 480px) {
+    margin-right: 470px !important;
     width: 356px;
     height: 280px;
   }
@@ -382,9 +381,9 @@
     min-width: 577px;
     height: 280px;
   }
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 480px) {
     width: 285px;
-    height: 224.16px;
+    height: 280px;
   }
   .swiper-pagination {
   }
