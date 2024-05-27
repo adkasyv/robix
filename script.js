@@ -1,48 +1,64 @@
-let svg = (document.createElementNS = "");
+document.addEventListener("DOMContentLoaded", function () {
+  // menu width-1024px
 
-document.getElementById("toggleList").addEventListener("click", function () {
-  let category = document.getElementById("category");
-  let categoryItem = document.getElementById("categoryItems");
+  let category = document.querySelector(".header__category");
+  const categoryItems = document.querySelectorAll(".header__category-item");
+  const toggleBtn = document.getElementById("toggleList");
 
-  if (category.style.display === "none") {
-    category.classList.remove("active-list");
-  } else {
-    category.classList.toggle("active-list");
-  }
-});
+  toggleBtn.addEventListener("click", () => {
+    for (let i = 1; i < categoryItems.length; i++) {
+      categoryItems[i].classList.toggle("hidden");
+    }
 
-let promotionSwiper = new Swiper(".promotion-swiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  //   rewind: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+    if (category.style.display === "none") {
+      category.classList.remove("active-list");
+    } else {
+      category.classList.toggle("active-list");
+    }
+  });
 
-let swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+  // burger-menu width-768px
 
-const menuBtn = document.querySelector(".menu-btn");
-let menuOpen = false;
-menuBtn.addEventListener("click", () => {
-  if (!menuOpen) {
-    menuBtn.classList.add("active");
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove("active");
-    menuOpen = false;
-  }
+  let menuOpen = false;
+
+  const menuBtn = document.querySelector(".menu-btn");
+  const burgerPopup = document.getElementById("popup");
+
+  menuBtn.addEventListener("click", () => {
+    if (!menuOpen) {
+      menuOpen = true;
+      category.classList.toggle("active");
+      menuBtn.classList.toggle("active");
+      burgerPopup.classList.toggle("active");
+    } else {
+      menuOpen = false;
+      category.classList.remove("active");
+      menuBtn.classList.remove("active");
+      burgerPopup.classList.remove("active");
+    }
+  });
+
+  // swiper
+  let promotionSwiper = new Swiper(".promotion-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });

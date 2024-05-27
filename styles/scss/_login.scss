@@ -1,6 +1,6 @@
 .login {
   display: flex;
-  &__logo--wrap{
+  &__logo--wrap {
     display: flex;
     justify-content: flex-end;
   }
@@ -16,44 +16,44 @@
     font-weight: 800;
   }
 
-  &__form{
+  &__form {
     display: flex;
     flex-direction: column;
     gap: 14px;
     margin: 5em;
   }
-  &__switch{
+  &__switch {
     display: flex;
     justify-content: space-between;
   }
-  &__switch--btn{
+  &__switch--btn {
     border: none;
     background: transparent;
     cursor: pointer;
     font-size: 24px;
   }
-  &__input--wrap{
+  &__input--wrap {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  &__input{
+  &__input {
     height: 30px;
     width: 300px;
     padding: 7px;
     border-radius: 5px;
-    border: 1px solid #BCBCBC;
+    border: 1px solid #bcbcbc;
   }
-  &__help--btn{
+  &__help--btn {
     background: transparent;
     border: none;
     cursor: pointer;
-    color: #2DB7A8;
+    color: #2db7a8;
     font-weight: 600;
     font-size: 12px;
     padding: 0;
   }
-  &__btn{
+  &__btn {
     width: 316px;
     height: 42px;
     font-size: 15px;
