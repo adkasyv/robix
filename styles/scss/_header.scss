@@ -101,6 +101,7 @@ $black-color: #000000;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 40px;
   }
 
   &__category {
@@ -113,12 +114,12 @@ $black-color: #000000;
     &.active {
       display: block;
       z-index: 100;
-      position: absolute;
     }
 
     @media all and (max-width: 1024px) {
       flex-direction: column;
       margin-left: 10px;
+
       &:first-child {
         display: block;
       }
@@ -130,6 +131,7 @@ $black-color: #000000;
 
     @media all and (max-width: 768px) {
       display: none;
+      width: 120px;
     }
   }
   &__category-item {
@@ -195,7 +197,7 @@ $black-color: #000000;
   &__calls-wrapper {
     display: flex;
     justify-content: flex-end;
-    width: 380px;
+    width: 400px;
     @media all and (max-width: 480px) {
       display: none;
     }
