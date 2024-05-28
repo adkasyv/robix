@@ -1,4 +1,4 @@
-CSS .container {
+.container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -8,14 +8,11 @@ CSS .container {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
-  CSS .container {
+  .container {
     width: 95%;
   }
 }
 
-.promotions {
-  margin: 3em;
-}
 .promotions__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +37,7 @@ CSS .container {
 }
 .promotions__card {
   width: 300px;
-  border: 2px solid #D9D9D9;
+  border: 2px solid #d9d9d9;
   border-radius: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 30%;
@@ -74,7 +71,7 @@ CSS .container {
 .promotions__btns--green {
   width: 231px;
   height: 43px;
-  background: #2DB7A8;
+  background: #2db7a8;
   border: none;
   border-radius: 20px;
   color: white;

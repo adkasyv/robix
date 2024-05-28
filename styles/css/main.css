@@ -1399,7 +1399,7 @@
   margin-left: 15%;
 }
 
-CSS .container {
+.container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -1409,14 +1409,11 @@ CSS .container {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
-  CSS .container {
+  .container {
     width: 95%;
   }
 }
 
-.promotions {
-  margin: 3em;
-}
 .promotions__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1603,6 +1600,92 @@ CSS .container {
   transition: 0.3s ease;
 }
 
+.footer {
+  background: #033733;
+  width: 100%;
+  height: 200px;
+  margin-top: 120px;
+  position: absolute;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media all and (max-width: 480px) {
+  .footer {
+    padding: 0;
+  }
+}
+.footer__wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 480px) {
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer__logo-text {
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 800;
+  color: #fff;
+}
+.footer__copyright {
+  color: #fff;
+  font-size: 16px;
+}
+@media all and (max-width: 480px) {
+  .footer__copyright {
+    margin-top: 20px;
+  }
+}
+.footer__title {
+  color: #fff;
+  font-size: 16px;
+}
+@media all and (max-width: 480px) {
+  .footer__title {
+    margin-top: 20px;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -1617,10 +1700,11 @@ body {
           align-items: center;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .wrapper {
-  margin: 50px 120px;
+  margin: 50px 120px 0;
   max-width: 1200px;
   width: 100%;
   -webkit-box-sizing: border-box;

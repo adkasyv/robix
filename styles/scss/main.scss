@@ -7,6 +7,7 @@
 @import "./promotion";
 @import "./promotionPage";
 @import "./registration";
+@import "./footer";
 
 $primary-color: #033733;
 $secondary-color: #2db7a8;
@@ -20,9 +21,10 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .wrapper {
-  margin: 50px 120px;
+  margin: 50px 120px 0;
   max-width: 1200px;
   width: 100%;
   box-sizing: border-box;
