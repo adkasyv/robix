@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  let swiper = new Swiper(".mySwiper", {
+  let coursesSwiper = new Swiper(".courses__swiper-container", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
