@@ -149,41 +149,10 @@
         <section class="courses">
           <h2 class="courses__title section-title">Курсы</h2>
 
-          <!-- <div class="courses__arrow-btn-wrapper">
-            <div class="courses__arrow-btn courses__arrow-left">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M27.3331 12.3333L27.3331 15.6667L7.33311 15.6667L16.4998 24.8333L14.1331 27.2L0.933105 14L14.1331 0.800012L16.4998 3.16668L7.3331 12.3333L27.3331 12.3333Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-            <div class="courses__arrow-btn courses__arrow-right">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M27.3331 12.3333L27.3331 15.6667L7.33311 15.6667L16.4998 24.8333L14.1331 27.2L0.933105 14L14.1331 0.800012L16.4998 3.16668L7.3331 12.3333L27.3331 12.3333Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div> -->
-
           <div class="courses__swiper-container swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="courses__card" id="card-1">
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
                   <div class="courses__img-wrap">
                     <img
                       class="courses__img"
@@ -204,8 +173,8 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="courses__card" id="card-2">
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
                   <div class="courses__img-wrap">
                     <img
                       class="courses__img"
@@ -226,8 +195,52 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="courses__card" id="card-3">
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
+                  <div class="courses__img-wrap">
+                    <img
+                      class="courses__img"
+                      src="./assets/valle.png"
+                      alt="courses__card"
+                    />
+                  </div>
+                  <div class="courses__text">
+                    <h3>Lego education Wedo 2.0</h3>
+                    <p>
+                      Для младших студентов 5-8 лет программа построена на Lego
+                      education Wedo 2.0
+                    </p>
+                  </div>
+                  <div class="courses__btn">
+                    <button class="courses__btn-green">Записаться</button>
+                    <button class="courses__btn-white">Информация</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
+                  <div class="courses__img-wrap">
+                    <img
+                      class="courses__img"
+                      src="./assets/valle.png"
+                      alt="courses__card"
+                    />
+                  </div>
+                  <div class="courses__text">
+                    <h3>Lego education Wedo 2.0</h3>
+                    <p>
+                      Для младших студентов 5-8 лет программа построена на Lego
+                      education Wedo 2.0
+                    </p>
+                  </div>
+                  <div class="courses__btn">
+                    <button class="courses__btn-green">Записаться</button>
+                    <button class="courses__btn-white">Информация</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
                   <div class="courses__img-wrap">
                     <img
                       class="courses__img"
@@ -250,64 +263,89 @@
               </div>
             </div>
 
-            <div
-              class="swiper-button-next courses__arrow-btn courses__arrow-right"
-            >
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="courses__btn-wrapper">
+              <div
+                class="swiper-button-prev courses__arrow-btn courses__arrow-left"
               >
-                <path
-                  d="M27.3331 12.3333L27.3331 15.6667L7.33311 15.6667L16.4998 24.8333L14.1331 27.2L0.933105 14L14.1331 0.800012L16.4998 3.16668L7.3331 12.3333L27.3331 12.3333Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-            <div
-              class="swiper-button-prev courses__arrow-btn courses__arrow-left"
-            >
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.3331 12.3333L27.3331 15.6667L7.33311 15.6667L16.4998 24.8333L14.1331 27.2L0.933105 14L14.1331 0.800012L16.4998 3.16668L7.3331 12.3333L27.3331 12.3333Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div
+                class="swiper-button-next courses__arrow-btn courses__arrow-right"
               >
-                <path
-                  d="M27.3331 12.3333L27.3331 15.6667L7.33311 15.6667L16.4998 24.8333L14.1331 27.2L0.933105 14L14.1331 0.800012L16.4998 3.16668L7.3331 12.3333L27.3331 12.3333Z"
-                  fill="white"
-                />
-              </svg>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.3331 12.3333L27.3331 15.6667L7.33311 15.6667L16.4998 24.8333L14.1331 27.2L0.933105 14L14.1331 0.800012L16.4998 3.16668L7.3331 12.3333L27.3331 12.3333Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </section>
 
         <section class="promotion">
           <h2 class="promotion__title section-title">Акции</h2>
           <div class="promotion__wrapper">
-            <div class="swiper promotion-swiper">
+            <div class="swiper promotion__swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/robo1.jpg" alt="robo1" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo1.jpg"
+                    alt="robo1"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo2.jpg" alt="robo2" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo2.jpg"
+                    alt="robo2"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo3.jpg" alt="robo3" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo3.jpg"
+                    alt="robo3"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo1.jpg" alt="robo1" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo1.jpg"
+                    alt="robo1"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo2.jpg" alt="robo2" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo2.jpg"
+                    alt="robo2"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo3.jpg" alt="robo3" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo3.jpg"
+                    alt="robo3"
+                  />
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -485,7 +523,7 @@
       </footer>
     </div>
 
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

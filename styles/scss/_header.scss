@@ -19,7 +19,7 @@ $black-color: #000000;
   @media all and (max-width: 768px) {
     display: flex;
     justify-content: space-between;
-    width: 79%;
+    width: 90%;
     padding: 0 50px;
   }
   @media all and (max-width: 480px) {
@@ -99,7 +99,7 @@ $black-color: #000000;
   &__menu-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 40px;
     width: 100%;
   }
@@ -115,14 +115,16 @@ $black-color: #000000;
       display: block;
       z-index: 100;
     }
+    &.active-burger {
+      display: block;
+      position: absolute;
+      z-index: 100;
+    }
 
     @media all and (max-width: 1024px) {
       flex-direction: column;
       margin-left: 10px;
 
-      &:first-child {
-        display: block;
-      }
       .hidden {
         display: none;
       }
@@ -132,6 +134,10 @@ $black-color: #000000;
     @media all and (max-width: 768px) {
       display: none;
       width: 120px;
+    }
+
+    li {
+      text-wrap: nowrap;
     }
   }
   &__category-item {
@@ -197,7 +203,7 @@ $black-color: #000000;
   &__calls-wrapper {
     display: flex;
     justify-content: flex-end;
-    width: 400px;
+    width: 420px;
     @media all and (max-width: 480px) {
       display: none;
     }

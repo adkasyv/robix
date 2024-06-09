@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (category.style.display === "none") {
-      category.classList.remove("active-list");
+      category.classList.remove("active");
     } else {
-      category.classList.toggle("active-list");
+      category.classList.toggle("active");
     }
   });
 
@@ -27,19 +27,28 @@ document.addEventListener("DOMContentLoaded", function () {
   menuBtn.addEventListener("click", () => {
     if (!menuOpen) {
       menuOpen = true;
-      category.classList.toggle("active");
+      category.classList.toggle("active-burger");
       menuBtn.classList.toggle("active");
       burgerPopup.classList.toggle("active");
     } else {
       menuOpen = false;
-      category.classList.remove("active");
+      category.classList.remove("active-burger");
       menuBtn.classList.remove("active");
       burgerPopup.classList.remove("active");
     }
   });
 
+  function checkWindowSizeForBurgerBtn() {
+    if (window.innerWidth < 480) {
+      category.classList.remove("active-burger");
+    } else {
+    }
+  }
+  window.addEventListener("resize", checkWindowSizeForBurgerBtn);
+  checkWindowSizeForBurgerBtn();
+
   // swiper
-  let promotionSwiper = new Swiper(".promotion-swiper", {
+  let promotionSwiper = new Swiper(".promotion__swiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
@@ -50,8 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let coursesSwiper = new Swiper(".courses__swiper-container", {
     slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 30,
     loop: true,
+    centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -59,6 +70,20 @@ document.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
     },
   });
 });
