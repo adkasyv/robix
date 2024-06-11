@@ -24,10 +24,11 @@ body {
   width: 100%;
 }
 .wrapper {
-  margin: 50px 120px 0;
+  padding: 50px 120px 0;
   max-width: 1200px;
   width: 100%;
-  box-sizing: border-box;
+  @media all and (max-width: 320px) {
+  }
 }
 a {
   text-decoration: none;
