@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .header {
   height: 40px;
   display: -webkit-box;
@@ -94,18 +108,19 @@
     width: 100%;
     height: 100%;
     background-color: #033733;
-    padding: 1rem;
-    -webkit-transform: translateX(150%);
-        -ms-transform: translateX(150%);
-            transform: translateX(150%);
-    -webkit-transition: left 0.3s ease 0.3s;
-    transition: left 0.3s ease 0.3s;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }
 }
 .header .burger-popup.active {
-  -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
   display: none;
 }
 @media all and (max-width: 768px) {
@@ -140,14 +155,33 @@
   z-index: 100;
 }
 .header__category.active-burger {
-  display: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 120px;
   position: absolute;
-  z-index: 100;
+  top: 100px;
+  right: 70px;
 }
-@media all and (max-width: 768px) {
-  .header__category.active-burger {
-    display: block;
-  }
+.header__category.active-burger .header__category-item {
+  display: block;
+  text-align: right;
+  width: 100%;
+  margin: 20px 0 0;
+  z-index: 100;
+  font-size: 36pt;
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-animation: fadeIn 0.5s forwards;
+          animation: fadeIn 0.5s forwards;
+}
+.header__category.active-burger .header__category-item:hover {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #2db7a8;
 }
 @media all and (max-width: 1024px) {
   .header__category {
