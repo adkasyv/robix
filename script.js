@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category.classList.remove("active-burger");
       menuBtn.classList.remove("active");
       burgerPopup.classList.remove("active");
-      categoryItems.classList.remove("active");
+      // categoryItems.classList.remove("active");
     }
   }
   window.addEventListener("resize", checkWindowSizeForBurgerBtn);
