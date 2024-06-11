@@ -150,6 +150,16 @@
   list-style: none;
   padding: 0;
 }
+@media all and (max-width: 1024px) {
+  .header__category {
+    display: block;
+  }
+}
+@media all and (max-width: 768px) {
+  .header__category {
+    display: none;
+  }
+}
 .header__category.active {
   display: block;
   z-index: 100;

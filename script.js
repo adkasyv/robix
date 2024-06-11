@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let category = document.querySelector(".header__category");
   let menuOpen = false;
 
+  const categoryItemByID = document.getElementById("category-item");
   const categoryItems = document.querySelectorAll(".header__category-item");
   const toggleBtn = document.getElementById("toggleBtn");
   const menuBtn = document.querySelector(".menu-btn");
@@ -26,15 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
       category.classList.toggle("active-burger");
       menuBtn.classList.toggle("active");
       burgerPopup.classList.toggle("active");
-      categoryItems.classList.toggle("active");
-      categoryItems.classList.remove("hidden");
+      categoryItemByID.classList.toggle("active");
+      categoryItemByID.classList.remove("hidden");
     } else {
       menuOpen = false;
       category.style.display = "none";
       category.classList.remove("active-burger");
       menuBtn.classList.remove("active");
       burgerPopup.classList.remove("active");
-      categoryItems.classList.remove("active");
+      categoryItemByID.classList.remove("active");
     }
   });
 
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category.classList.remove("active-burger");
       menuBtn.classList.remove("active");
       burgerPopup.classList.remove("active");
-      // categoryItems.classList.remove("active");
+      categoryItemByID.classList.remove("active");
     }
   }
   window.addEventListener("resize", checkWindowSizeForBurgerBtn);

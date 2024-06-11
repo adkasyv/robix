@@ -113,6 +113,12 @@ $black-color: #000000;
     display: flex;
     list-style: none;
     padding: 0;
+    @media all and (max-width: 1024px) {
+      display: block;
+    }
+    @media all and (max-width: 768px) {
+      display: none;
+    }
 
     &.active {
       display: block;
