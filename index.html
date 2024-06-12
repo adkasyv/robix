@@ -9,7 +9,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <!-- <link rel="stylesheet" href="./styles/css/swiper-bundle.min.css" /> -->
+
+    <!-- Swiper CSS -->
+    <link type="image/x-icon" href="." />
   </head>
   <body>
     <div class="wrapper">
@@ -35,7 +38,10 @@
         <div class="header__menu-container">
           <ul class="header__category" id="category">
             <li>
-              <a href="./courses/courses.html" class="header__category-item"
+              <a
+                href="./courses/courses.html"
+                class="header__category-item"
+                id="category-item"
                 >Курсы</a
               >
             </li>
@@ -43,14 +49,17 @@
               <a
                 href="./promotions/promotions.html"
                 class="header__category-item hidden"
+                id="category-item"
                 >Акции</a
               >
             </li>
             <li>
-              <a href="" class="header__category-item hidden">О школе</a>
+              <a href="" class="header__category-item hidden" id="category-item"
+                >О школе</a
+              >
             </li>
           </ul>
-          <span id="toggleList" class="header__arrow">
+          <span id="toggleBtn" class="header__arrow">
             <svg
               width="12"
               height="7"
@@ -131,14 +140,14 @@
             </a>
           </div>
           <div class="landing__img-wrapper">
-            <img
+            <!-- <img
               class="landing__img-vector"
               src="./assets/landing-img-vector.svg"
               alt="landing-vector"
-            />
+            /> -->
             <img
               class="landing__img"
-              src="./assets/landing.svg"
+              src="./assets/robix-img.png"
               alt="landing-img"
             />
           </div>
@@ -146,69 +155,124 @@
         <section class="courses">
           <h2 class="courses__title section-title">Курсы</h2>
 
-          <div class="courses__list">
-            <div class="courses__card" id="card-1">
-              <div class="courses__img-wrap">
-                <img
-                  class="courses__img"
-                  src="./assets/valle.png"
-                  alt="courses__card"
-                />
+          <div class="courses__swiper-container swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
+                  <div class="courses__img-wrap">
+                    <img
+                      class="courses__img"
+                      src="./assets/valle.png"
+                      alt="courses__card"
+                    />
+                  </div>
+                  <div class="courses__text">
+                    <h3>Lego education Wedo 2.0</h3>
+                    <p>
+                      Для младших студентов 5-8 лет программа построена на Lego
+                      education Wedo 2.0
+                    </p>
+                  </div>
+                  <div class="courses__btn">
+                    <button class="courses__btn-green">Записаться</button>
+                    <button class="courses__btn-white">Информация</button>
+                  </div>
+                </div>
               </div>
-              <div class="courses__text">
-                <h3>Lego education Wedo 2.0</h3>
-                <p>
-                  Для младших студентов 5-8 лет программа построена на Lego
-                  education Wedo 2.0
-                </p>
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
+                  <div class="courses__img-wrap">
+                    <img
+                      class="courses__img"
+                      src="./assets/valle.png"
+                      alt="courses__card"
+                    />
+                  </div>
+                  <div class="courses__text">
+                    <h3>Lego education Wedo 2.0</h3>
+                    <p>
+                      Для младших студентов 5-8 лет программа построена на Lego
+                      education Wedo 2.0
+                    </p>
+                  </div>
+                  <div class="courses__btn">
+                    <button class="courses__btn-green">Записаться</button>
+                    <button class="courses__btn-white">Информация</button>
+                  </div>
+                </div>
               </div>
-              <div class="courses__btn">
-                <button class="courses__btn-green">Записаться</button>
-                <button class="courses__btn-white">Информация</button>
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
+                  <div class="courses__img-wrap">
+                    <img
+                      class="courses__img"
+                      src="./assets/valle.png"
+                      alt="courses__card"
+                    />
+                  </div>
+                  <div class="courses__text">
+                    <h3>Lego education Wedo 2.0</h3>
+                    <p>
+                      Для младших студентов 5-8 лет программа построена на Lego
+                      education Wedo 2.0
+                    </p>
+                  </div>
+                  <div class="courses__btn">
+                    <button class="courses__btn-green">Записаться</button>
+                    <button class="courses__btn-white">Информация</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
+                  <div class="courses__img-wrap">
+                    <img
+                      class="courses__img"
+                      src="./assets/valle.png"
+                      alt="courses__card"
+                    />
+                  </div>
+                  <div class="courses__text">
+                    <h3>Lego education Wedo 2.0</h3>
+                    <p>
+                      Для младших студентов 5-8 лет программа построена на Lego
+                      education Wedo 2.0
+                    </p>
+                  </div>
+                  <div class="courses__btn">
+                    <button class="courses__btn-green">Записаться</button>
+                    <button class="courses__btn-white">Информация</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide courses__slide">
+                <div class="courses__card">
+                  <div class="courses__img-wrap">
+                    <img
+                      class="courses__img"
+                      src="./assets/valle.png"
+                      alt="courses__card"
+                    />
+                  </div>
+                  <div class="courses__text">
+                    <h3>Lego education Wedo 2.0</h3>
+                    <p>
+                      Для младших студентов 5-8 лет программа построена на Lego
+                      education Wedo 2.0
+                    </p>
+                  </div>
+                  <div class="courses__btn">
+                    <button class="courses__btn-green">Записаться</button>
+                    <button class="courses__btn-white">Информация</button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="courses__card" id="card-2">
-              <div class="courses__img-wrap">
-                <img
-                  class="courses__img"
-                  src="./assets/valle.png"
-                  alt="courses__card"
-                />
-              </div>
-              <div class="courses__text">
-                <h3>Lego education Wedo 2.0</h3>
-                <p>
-                  Для младших студентов 5-8 лет программа построена на Lego
-                  education Wedo 2.0
-                </p>
-              </div>
-              <div class="courses__btn">
-                <button class="courses__btn-green">Записаться</button>
-                <button class="courses__btn-white">Информация</button>
-              </div>
-            </div>
-            <div class="courses__card" id="card-3">
-              <div class="courses__img-wrap">
-                <img
-                  class="courses__img"
-                  src="./assets/valle.png"
-                  alt="courses__card"
-                />
-              </div>
-              <div class="courses__text">
-                <h3>Lego education Wedo 2.0</h3>
-                <p>
-                  Для младших студентов 5-8 лет программа построена на Lego
-                  education Wedo 2.0
-                </p>
-              </div>
-              <div class="courses__btn">
-                <button class="courses__btn-green">Записаться</button>
-                <button class="courses__btn-white">Информация</button>
-              </div>
-            </div>
-            <div class="courses__arrow-btn-wrapper">
-              <div class="courses__arrow-btn courses__arrow-left">
+
+            <div class="courses__btn-wrapper">
+              <div
+                class="swiper-button-prev courses__arrow-btn courses__arrow-left"
+              >
                 <svg
                   width="28"
                   height="28"
@@ -222,7 +286,9 @@
                   />
                 </svg>
               </div>
-              <div class="courses__arrow-btn courses__arrow-right">
+              <div
+                class="swiper-button-next courses__arrow-btn courses__arrow-right"
+              >
                 <svg
                   width="28"
                   height="28"
@@ -238,32 +304,54 @@
               </div>
             </div>
           </div>
-
-          <div class="courses__swiper-container"></div>
         </section>
 
         <section class="promotion">
           <h2 class="promotion__title section-title">Акции</h2>
           <div class="promotion__wrapper">
-            <div class="swiper promotion-swiper">
+            <div class="swiper promotion__swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/robo1.jpg" alt="robo1" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo1.jpg"
+                    alt="robo1"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo2.jpg" alt="robo2" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo2.jpg"
+                    alt="robo2"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo3.jpg" alt="robo3" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo3.jpg"
+                    alt="robo3"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo1.jpg" alt="robo1" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo1.jpg"
+                    alt="robo1"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo2.jpg" alt="robo2" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo2.jpg"
+                    alt="robo2"
+                  />
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/robo3.jpg" alt="robo3" />
+                <div class="swiper-slide promotion__slide">
+                  <img
+                    class="promotion__img"
+                    src="./assets/robo3.jpg"
+                    alt="robo3"
+                  />
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -353,7 +441,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <form class="contacts">
           <h2 class="contacts__info-title">Контакты</h2>
           <div class="contacts__info">
             <div class="contacts__info-wrapper">
@@ -398,7 +486,7 @@
               </div>
             </div>
             <div class="contacts__divider"></div>
-            <form class="contacts__subscribe-container">
+            <div class="contacts__subscribe-container">
               <h2 class="contacts__subscribe-title">
                 Подпишись на наши обновления
               </h2>
@@ -411,9 +499,9 @@
                 />
                 <button class="contacts__subscribe-btn">Отправить</button>
               </div>
-            </form>
+            </div>
           </div>
-        </section>
+        </form>
       </div>
       <footer class="footer">
         <div class="footer__wrapper">
@@ -441,7 +529,7 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
