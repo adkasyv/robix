@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // menu width-1024px
-
   let category = document.querySelector(".header__category");
-  const toggleBtn = document.getElementById("toggleList");
+  let menuOpen = false;
+
+  const categoryItemByID = document.getElementById("category-item");
+  const categoryItems = document.querySelectorAll(".header__category-item");
+  const toggleBtn = document.getElementById("toggleBtn");
+  const menuBtn = document.querySelector(".menu-btn");
+  const burgerPopup = document.getElementById("popup");
 
   toggleBtn.addEventListener("click", () => {
     for (let i = 1; i < categoryItems.length; i++) {
       categoryItems[i].classList.toggle("hidden");
     }
+
     if (category.style.display === "none") {
       category.classList.remove("active");
     } else {
@@ -15,28 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // burger-menu width-768px
-
-  let menuOpen = false;
-
-  const menuBtn = document.querySelector(".menu-btn");
-  const burgerPopup = document.getElementById("popup");
-  const categoryItems = document.getElementById("category-item");
-
   menuBtn.addEventListener("click", () => {
     if (!menuOpen) {
       menuOpen = true;
+      category.style.display = "block";
       category.classList.toggle("active-burger");
       menuBtn.classList.toggle("active");
       burgerPopup.classList.toggle("active");
-      categoryItems.classList.toggle("active");
-      categoryItems.classList.remove("hidden");
+      categoryItemByID.classList.toggle("active");
+      categoryItemByID.classList.remove("hidden");
     } else {
       menuOpen = false;
+      category.style.display = "none";
       category.classList.remove("active-burger");
       menuBtn.classList.remove("active");
       burgerPopup.classList.remove("active");
-      categoryItems.classList.remove("active");
+      categoryItemByID.classList.remove("active");
     }
   });
 
@@ -45,14 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
       category.classList.remove("active-burger");
       menuBtn.classList.remove("active");
       burgerPopup.classList.remove("active");
-      categoryItems.classList.remove("active");
-    } else {
+      categoryItemByID.classList.remove("active");
     }
   }
   window.addEventListener("resize", checkWindowSizeForBurgerBtn);
   checkWindowSizeForBurgerBtn();
 
-  // swiper
   let promotionSwiper = new Swiper(".promotion__swiper", {
     slidesPerView: 1,
     slidesPerView: "auto",

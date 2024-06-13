@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robix</title>
-    <link rel="stylesheet" href="./styles/css/main.css" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="./styles/scss/main.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./styles/css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./styles/css/swiper-bundle.min.css" /> -->
 
     <!-- Swiper CSS -->
     <link type="image/x-icon" href="." />
@@ -59,7 +59,7 @@
               >
             </li>
           </ul>
-          <span id="toggleList" class="header__arrow">
+          <span id="toggleBtn" class="header__arrow">
             <svg
               width="12"
               height="7"
@@ -460,8 +460,9 @@
                   />
                 </svg>
                 <div class="contacts__info-phone-numbers">
-                  <span>043337325</span>
-                  <span>043337325</span>
+                  <a href="tel:043337325" class="contacts__info-phone">043337325</a>
+                  <div class="header__contacts-divider"></div>
+                  <a href="tel:043337325" class="contacts__info-phone">043337325</a>
                 </div>
               </div>
               <div class="contacts__info-mail">
@@ -506,7 +507,7 @@
       <footer class="footer">
         <div class="footer__wrapper">
           <div class="footer__logo-wrapper">
-            <a href="./index.html" class="footer__logo">
+            <a href="#" class="footer__logo">
               <svg
                 width="26"
                 height="23"
@@ -523,7 +524,7 @@
             </a>
           </div>
           <div class="footer__copyright">© все права защищены, 2024</div>
-          <h2 class="footer__title">FrontGR</h2>
+          <h2 class="footer__title"><a class="footer__title" href="https://github.com/frontgr" target="_blank">FrontGR</a></h2>
         </div>
         <div class="footer__background"></div>
       </footer>

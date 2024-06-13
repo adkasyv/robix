@@ -10,4 +10,19 @@
   &--description {
     margin: 1em 0;
   }
+  &--btnGreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 400;
+    width: 200px;
+    height: 39px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #2db7a8;
+    border-radius: 80px;
+    cursor: pointer;  
+  }
 }
