@@ -3,12 +3,22 @@
   gap: 1em;
   margin: 4em 0 2em 0;
   height: 424px;
+  @media (max-width: 1250px) {
+    flex-wrap: wrap;
+    margin-bottom: 25em;    
+  }
   &--photoWrap {
     border-radius: 20px;
     position: relative;
   }
   &--photo {
     max-width: 800px;
+    @media (max-width: 890px) {  
+      max-width: 542px;
+    }
+    @media (max-width: 466px) {
+      max-width: 300px;
+    }
   }
   &--title {
     position: absolute;
@@ -16,6 +26,9 @@
     color: white;
     left: 20%;
     top: 20%;
+    @media (max-width: 890px) {  
+      font-size: 22px;
+    }
   }
   &--about {
     max-width: 800px;
@@ -30,8 +43,23 @@
     -webkit-box-shadow: -2px 0px 10px 7px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: -2px 0px 10px 7px rgba(0, 0, 0, 0.2);
     box-shadow: -2px 0px 10px 7px rgba(0, 0, 0, 0.2);
+    @media (max-width: 556px) {
+      padding: 5px;
+    }
+    @media only screen and (max-width: 444px) {
+      max-width: 330px;
+    }
   }
   &--btnWrap {
     margin-left: 15%;
+    @media only screen and (max-width: 444px) {
+      margin-left: 25px;
+    }
+  }
+  &--btn-green{
+    @media (max-width: 556px) {
+      width: 100px !important;
+    }
+   
   }
 }

@@ -456,6 +456,12 @@
   margin: 4em 0 2em 0;
   height: 424px;
 }
+@media (max-width: 1250px) {
+  .courses__page {
+    flex-wrap: wrap;
+    margin-bottom: 25em;
+  }
+}
 .courses__page--photoWrap {
   border-radius: 20px;
   position: relative;
@@ -463,12 +469,27 @@
 .courses__page--photo {
   max-width: 800px;
 }
+@media (max-width: 890px) {
+  .courses__page--photo {
+    max-width: 542px;
+  }
+}
+@media (max-width: 466px) {
+  .courses__page--photo {
+    max-width: 300px;
+  }
+}
 .courses__page--title {
   position: absolute;
   font-size: 32px;
   color: white;
   left: 20%;
   top: 20%;
+}
+@media (max-width: 890px) {
+  .courses__page--title {
+    font-size: 22px;
+  }
 }
 .courses__page--about {
   max-width: 800px;
@@ -482,8 +503,29 @@
   padding: 28px;
   box-shadow: -2px 0px 10px 7px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 556px) {
+  .courses__page--popup {
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 444px) {
+  .courses__page--popup {
+    max-width: 330px;
+  }
+}
 .courses__page--btnWrap {
   margin-left: 15%;
+}
+@media only screen and (max-width: 444px) {
+  .courses__page--btnWrap {
+    margin-left: 25px;
+    background-color: d;
+  }
+}
+@media (max-width: 556px) {
+  .courses__page--btn-green {
+    width: 100px !important;
+  }
 }
 
 .container {
@@ -1416,4 +1458,26 @@ a {
 
 .contacts__info-phone:hover {
   color: #2db7a8;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
