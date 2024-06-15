@@ -115,11 +115,11 @@ const swiperEl = document.querySelector('swiper-container')
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
         868:{
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 45,
         },
         1024: {
