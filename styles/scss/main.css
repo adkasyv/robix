@@ -462,6 +462,11 @@
     margin-bottom: 25em;
   }
 }
+@media (max-width: 1250px) {
+  .courses__page {
+    margin-bottom: 15em;
+  }
+}
 .courses__page--photoWrap {
   border-radius: 20px;
   position: relative;
@@ -476,7 +481,7 @@
 }
 @media (max-width: 466px) {
   .courses__page--photo {
-    max-width: 300px;
+    max-width: 100%;
   }
 }
 .courses__page--title {
@@ -488,7 +493,12 @@
 }
 @media (max-width: 890px) {
   .courses__page--title {
-    font-size: 22px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 466px) {
+  .courses__page--subtitle {
+    font-size: 14px;
   }
 }
 .courses__page--about {
@@ -498,6 +508,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-items: center;
   border: 1px solid whitesmoke;
   border-radius: 20px;
   padding: 28px;
@@ -505,7 +516,7 @@
 }
 @media (max-width: 556px) {
   .courses__page--popup {
-    padding: 5px;
+    padding: 8px;
   }
 }
 @media only screen and (max-width: 444px) {
@@ -518,8 +529,7 @@
 }
 @media only screen and (max-width: 444px) {
   .courses__page--btnWrap {
-    margin-left: 25px;
-    background-color: d;
+    margin-left: 0;
   }
 }
 @media (max-width: 556px) {
@@ -616,9 +626,19 @@
 .promotion__page--about {
   margin: 8em 0;
 }
+@media all and (max-width: 480px) {
+  .promotion__page--about {
+    margin: 5em 0;
+  }
+}
 .promotion__page--title {
   font-size: 58px;
   margin: 0;
+}
+@media all and (max-width: 480px) {
+  .promotion__page--title {
+    font-size: 50px;
+  }
 }
 .promotion__page--description {
   margin: 1em 0;
@@ -1176,23 +1196,13 @@
 }
 @media all and (max-width: 480px) {
   .contacts {
-    padding: 50px;
-  }
-}
-@media all and (max-width: 320px) {
-  .contacts {
-    padding: 30px;
+    padding: 28px;
   }
 }
 .contacts span {
   font-size: 17px;
   font-weight: 400;
   color: #fff;
-}
-@media all and (max-width: 768px) {
-  .contacts span {
-    font-size: 24px;
-  }
 }
 .contacts__info {
   display: flex;
@@ -1217,10 +1227,10 @@
   margin: 0 0 30px;
   width: 100%;
 }
-@media all and (max-width: 480px) {
+@media (max-width: 480px) {
   .contacts__info-title {
     text-align: center;
-    font-size: 46px;
+    font-size: 34px;
   }
 }
 @media all and (max-width: 320px) {
@@ -1233,7 +1243,14 @@
   align-items: start;
 }
 .contacts__info-mail {
+  display: flex;
+  align-items: center;
   margin-top: 30px;
+}
+@media (max-width: 480px) {
+  .contacts__info-mailtitle {
+    font-size: 18px;
+  }
 }
 .contacts__info-phone-img {
   margin-right: 20px;

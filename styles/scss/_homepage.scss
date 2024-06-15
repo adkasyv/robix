@@ -497,19 +497,17 @@
     padding: 70px;
   }
   @media all and (max-width: 480px) {
-    padding: 50px;
+    padding: 28px;
   }
-  @media all and (max-width: 320px) {
-    padding: 30px;
-  }
+  
 
   span {
     font-size: 17px;
     font-weight: 400;
     color: #fff;
-    @media all and (max-width: 768px) {
-      font-size: 24px;
-    }
+    // @media all and (max-width: 768px) {
+    //   font-size: 24px;
+    // }   
   }
 
   &__info {
@@ -533,9 +531,9 @@
     font-size: 32px;
     margin: 0 0 30px;
     width: 100%;
-    @media all and (max-width: 480px) {
+    @media (max-width: 480px) {
       text-align: center;
-      font-size: 46px;
+      font-size: 34px;
     }
     @media all and (max-width: 320px) {
       font-size: 36.29px;
@@ -547,7 +545,14 @@
     align-items: start;
   }
   &__info-mail {
+    display: flex;
+    align-items: center;
     margin-top: 30px;
+  }
+  &__info-mailtitle{
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
   &__info-phone-img {
     margin-right: 20px;
