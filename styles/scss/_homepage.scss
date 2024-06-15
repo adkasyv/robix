@@ -15,7 +15,10 @@
     height: 282px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column; 
+    @media (max-width: 890px) {  
+        margin-top: 3em;
+    }
 
     @media all and (max-width: 480px) {
       width: 100%;

@@ -40,7 +40,7 @@
     });
 
     function checkWindowSizeForBurgerBtn() {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 968) {
         category.classList.remove("active-burger");
         menuBtn.classList.remove("active");
         burgerPopup.classList.remove("active");

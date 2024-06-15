@@ -754,6 +754,11 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
+@media (max-width: 890px) {
+  .landing__info-wrapper {
+    margin-top: 3em;
+  }
+}
 @media all and (max-width: 480px) {
   .landing__info-wrapper {
     width: 100%;
